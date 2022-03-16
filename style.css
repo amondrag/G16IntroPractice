@@ -1,0 +1,54 @@
+html {
+    height: 100%;
+}
+
+
+body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;  /* removes default style */
+    display: flex;  /* enables flex content for its children */
+    box-sizing: border-box;
+}
+
+.color-text{
+    background-color:antiquewhite;
+}
+
+.caja-flex-padre{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    height: 90vh;
+    background-color: black;
+    }
+
+.item-flex-hijo{
+    flex-flow:nowrap;
+    align-content:space-around;
+    text-align: center;
+    display:grid;
+    width: 30%;
+    background-color:aquamarine;
+}
+
+.columna {
+    height: 100%;  /* allows both columns to span the full height of the browser window */
+    display: flex;
+    flex-direction: column;  /* stacks the left and right headers above the bottom content */
+    background-color: black;
+}
+
+#left {
+    flex-shrink: 0;  /* makes sure that content is not cut off in a smaller browser window */
+}
+
+.top-left{
+    flex-shrink: 0;
+}
+.bottom{
+    flex-grow: 1;
+    overflow-y: auto;
+}
